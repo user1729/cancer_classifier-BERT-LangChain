@@ -3,8 +3,7 @@
 
 source init-docker.sh
 
-docker run --runtime=nvidia --gpus '"device=1"' \
-  -e NVIDIA_VISIBLE_DEVICES=1 \
+docker run --runtime=nvidia \
   --mount type=bind,source=${DATA_VOLM},target=/home/developer/ \
   -w /home/developer/ \
   --rm --ipc=host -it \
