@@ -71,6 +71,7 @@ python demo.py --train --full_extraction --example
 --example: perform class prediction and extraction on an example
 
 ```
+<br>
 
 Base model used for finetuning: [BiomedBERT]("https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract")
 
