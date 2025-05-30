@@ -2,4 +2,4 @@
 
 source init-docker.sh
 
-docker build -t "${IMAGENAME}" -f Dockerfile ..
+docker build -t "${IMAGENAME}" -f Dockerfile .
