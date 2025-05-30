@@ -9,6 +9,7 @@
 ## Overview
 
 The objective here is to classify research paper abstracts (text-classification)  in to two classes (binary classification) cancer vs non-cancer. Also,  extract  specific cases of cancer from these paper abstracts. 
+Final model available in hugging face as "user1729/BiomedBERT-cancer-classifier-v1.0" (page uri: https://huggingface.co/user1729/BiomedBERT-cancer-classifier-v1.0/tree/main)
 
 **Steps:** 
 
