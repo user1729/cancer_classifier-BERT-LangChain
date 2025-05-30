@@ -45,20 +45,6 @@ RUN pip3 install torch torchvision --index-url https://download.pytorch.org/whl/
 ADD requirements.txt .
 RUN pip3 install -r requirements.txt 
 
-# Install Jupyter and VS Code Server
-RUN pip3 install jupyterlab notebook ipywidgets \
-    && curl -fsSL https://code-server.dev/install.sh | sh
-
-# Expose Jupyter and VS Code ports
-EXPOSE 8888
-EXPOSE 8080
-
-# Create a non-root user
-#RUN groupadd $USERNAME \
-#    && useradd -m -g $USERNAME $USERNAME \
-#    && echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers \
-#    && chmod 777 /home/$USERNAME
-
 ENV HOME=/home/$USERNAME
 ENV SHELL=/bin/bash
 
