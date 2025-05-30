@@ -11,7 +11,7 @@ ARG USERNAME="developer"
 # Install basic utilities and Python
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 python3-pip python3-dev python3-setuptools \
-    git curl wget vim build-essential ca-certificates \
+    git curl zip unzip wget vim build-essential ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 # Optional: Set python3 as default
