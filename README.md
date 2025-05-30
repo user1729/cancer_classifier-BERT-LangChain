@@ -49,10 +49,9 @@ The objective here is to classify research paper abstracts (text-classification)
 **Set up docker container**
 
 ```
-cd docker
-./init-docker.sh
-./build_docker.sh
-./run_docker.sh
+./docker/init-docker.sh
+./docker/build_docker.sh
+./docker/run_docker.sh
 ```
 
 <br><br>
