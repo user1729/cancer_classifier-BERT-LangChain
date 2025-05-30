@@ -123,6 +123,8 @@ if __name__ == "__main__":
         batch_result["classification_results"],
         batch_result["extraction_results"]
     )):
-        print(f"\nText {i+1}:")
+        print(f"\nText {i+1}: " + multiple_texts[i])
         print("Classification:", class_res)
         print("Extraction:", extract_res)
+        print("\n")
+
